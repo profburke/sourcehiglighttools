@@ -1,5 +1,9 @@
 # definitions for Swift
 
+
+# use the "preproc" class for import, etc.
+# also consider it for Obj-C
+
 include "c_comment.lang"
 
 (keyword,normal,classname) = `(\<class|protocol|struct|enum)([[:blank:]]+)([[:alnum:]_]+)`
