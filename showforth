@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+/usr/local/bin/source-highlight -f esc256 --style-file=/Users/jxl166/.source-highlight-custom/forth.style -o STDOUT -i $1
