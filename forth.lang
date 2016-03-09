@@ -1,13 +1,18 @@
 # definitions for Forth
 
-# EVERYTHING NEEDS TO BE CASE INSENSITIVE (??)
 
+# comments
 environment comment start "\\" begin
   include "todo.lang"
   include "url.lang"
 end
 
 
+# strings -- TODO: what about other string words?
+string delim ".\"" "\"" multiline
+
+
+# stack words
 stack = "-rot",
   "2>r",
   "2drop",
@@ -53,7 +58,7 @@ stack = "-rot",
   "sp0",
   "sp@",
   "swap",
-  "tuck"
+  "tuck" nonsensitive
 
 
 memory = "here",
@@ -125,11 +130,11 @@ memory = "here",
   "-trailing",
   "/string",
   "bounds",
-  "pad"
+  "pad" nonsensitive
 
 
 # not complete...
-control = "if",
+keyword = "if",
   "else",
   "endif",
   "then",
@@ -163,11 +168,11 @@ control = "if",
   "try",
   "endtry",
   "iferror",
-  "restore"
+  "restore" nonsensitive
   
 
 
-# inomplete
+# incomplete
 
 defining = "variable",
   "2variable",
@@ -180,7 +185,8 @@ defining = "variable",
   "user",
   "value",
   "to",
-  "noname:"
+  "noname:" nonsensitive
+  
 
 include "number.lang"
 
@@ -190,8 +196,8 @@ include "number.lang"
 
 
 
-# possibly need to override things from above...
 
+# possibly need to override things from above...
 normal = "0="
 
 
