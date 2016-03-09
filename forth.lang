@@ -1,0 +1,197 @@
+# definitions for Forth
+
+# EVERYTHING NEEDS TO BE CASE INSENSITIVE (??)
+
+environment comment start "\\" begin
+  include "todo.lang"
+  include "url.lang"
+end
+
+
+stack = "-rot",
+  "2>r",
+  "2drop",
+  "2dup",
+  "2nip",
+  "2over",
+  "2r>",
+  "2r@",
+  "2rdrop",
+  "2rot",
+  "2swap",
+  "2tuck",
+  ">r",
+  "?dup",
+  "drop",
+  "dup",
+  "fdrop",
+  "fdup",
+  "fnip",
+  "fover",
+  "fp!",
+  "fp0",
+  "fp@",
+  "fpick",
+  "frot",
+  "fswap",
+  "ftuck",
+  "lp!",
+  "lp0",
+  "lp@",
+  "nip",
+  "over",
+  "pick",
+  "r>",
+  "r@",
+  "rdrop",
+  "roll",
+  "rot",
+  "rp!",
+  "rp0",
+  "rp@",
+  "sp!",
+  "sp0",
+  "sp@",
+  "swap",
+  "tuck"
+
+
+memory = "here",
+  "unused",
+  "allot",
+  "c,",
+  "f,",
+  ",",
+  "2,",
+  "align",
+  "falign",
+  "sfalign",
+  "dfalign",
+  "maxalign",
+  "cfalign",
+  "allocate",
+  "free",
+  "resize",
+  "@",
+  "!",
+  "+!",
+  "c@",
+  "c!",
+  "2@",
+  "2!",
+  "f@",
+  "f!",
+  "sf@",
+  "sf!",
+  "df@",
+  "df!",
+  "sw@",
+  "uw@",
+  "w!",
+  "sl@",
+  "ul@",
+  "l!",
+  "chars",
+  "char+",
+  "cells",
+  "cell+",
+  "aligned",
+  "floats",
+  "float+",
+  "float",
+  "faligned",
+  "sfloats",
+  "sfloat+",
+  "sfalinged",
+  "dfloats",
+  "dfloat+",
+  "dfaligned",
+  "maxaligned",
+  "cfaligned",
+  "ADDRESS-UNIT-BITS",
+  "/w",
+  "/l",
+  "move",
+  "erase",
+  "cmove",
+  "cmove>",
+  "fill",
+  "blank",
+  "compare",
+  "str=",
+  "str<",
+  "string-prefix?",
+  "search",
+  "-trailing",
+  "/string",
+  "bounds",
+  "pad"
+
+
+# not complete...
+control = "if",
+  "else",
+  "endif",
+  "then",
+  "case",
+  "endcase",
+  "of",
+  "endof",
+  "begin",
+  "while",
+  "repeat",
+  "until",
+  "again",
+  "?do",
+  "loop",
+  "leave",
+  "unloop",
+  "i",
+  "j",
+  "k",
+  "do",
+  "exit",
+  "+loop",
+  "for",
+  "next",
+  "recursive",
+  "recurse",
+  ";s",
+  "throw",
+  "catch",
+  "nothrow",
+  "try",
+  "endtry",
+  "iferror",
+  "restore"
+  
+
+
+# inomplete
+
+defining = "variable",
+  "2variable",
+  "fvariable",
+  "constant",
+  "2constant",
+  "fconstant",
+  "create",
+  "does>",
+  "user",
+  "value",
+  "to",
+  "noname:"
+
+include "number.lang"
+
+
+# 'core' words like interpret, exit, bye
+# vocabulary words (including 'words')
+
+
+
+# possibly need to override things from above...
+
+normal = "0="
+
+

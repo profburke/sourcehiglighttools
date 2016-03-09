@@ -1,0 +1,23 @@
+comment green ;
+memory red ;
+control purple ;
+todo yellow ;
+defining blue ;
+number orange ;
+url yellow ;
+stack orange ;
+
+
+function blue ;
+keyword purple ;
+preproc darkblue ;
+regexp orange ;
+string red ;
+
+
+
+
+type green ;
+usertype orange ;
+variable green ;
+
